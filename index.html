@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src='script.js'></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+<div id="container">
+  <div id="top">
+    <div id="birthday">
+      <p>DAY</p>
+      <p>MONTH</p>
+      <p>YEAR</p>
+    </div>
+    <div id="enter-date">
+      <div class="input">
+        <input type="type" value="0" id="day-box" class="box" onchange="change_day(this.value)">
+      </div>
+      <div class="input">
+        <input type="type" value="0" id="month-box" class="box" onchange="change_month(this.value)">
+      </div>
+      <div class="input" >
+        <input type="type" value="0" id="year-box" class="box" onchange="change_year(this.value)">
+      </div>
+    </div>
+  </div>
+  <div class="divider">
+    <img src="./assets/images/favicon-32x32.png" alt="image not found">
+  </div>
+  <div id="bottom">
+    <div class="result-date">
+      <h1 id="result-years"></h1>
+      <h2 class="date">years</h2>
+    </div>
+    <div class="result-date">
+      <h1 id="result-months"></h1>
+      <h2 class="date">months</h2>
+    </div>
+    <div class="result-date">
+      <h1 id="result-days"></h1>
+      <h2 class="date">days</h2>
+    </div>
+  </div>
+</div>
+</body>
+</html>
